@@ -14,11 +14,11 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets Core Gui)
 qt_standard_project_setup()
 
 set(PROJECT_SOURCES
-    main.cpp
-    Application.cpp
-    Application.h
-    dialog.h
-    dialog.cpp
+    src/main.cpp
+    src/Application.cpp
+    src/Application.h
+    src/dialog.h
+    src/dialog.cpp
 )
 
 qt_add_executable(Timer
