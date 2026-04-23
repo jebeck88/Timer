@@ -23,6 +23,7 @@ set(PROJECT_SOURCES
 
 qt_add_executable(Timer
     MANUAL_FINALIZATION
+    WIN32
     ${PROJECT_SOURCES}
 )
 
