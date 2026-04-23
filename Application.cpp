@@ -4,14 +4,15 @@
 #include "Application.h"
 #include "Dialog.h"
 
-// const QDateTime Application::sBeginDateTime( QDate( 2005, 03, 14 ) );
-const QDateTime Application::sBeginDateTime(QDateTime::fromString("1988-04-30", "yyyy-MM-dd"));
-// const QDateTime Application::sBeginDateTime(QDate(1988, 04, 30));
-//  const QDateTime Application::sBeginDateTime( QDate( 2023, 03, 14 ) );
+// const QString startDate = "2005-04-14";
+const QString startDate = "1988-04-30";
 
-// const QDateTime Application::sEndDateTime( QDate( 2023, 03, 14 ) );
-const QDateTime Application::sEndDateTime(QDateTime::fromString("2031-04-30", "yyyy-MM-dd"));
-// const QDateTime Application::sEndDateTime(QDate(2023, 06, 01));
+// const QString endDate = "2023-03-14";
+const QString endDate = "2031-04-30";
+
+// Set start and end datetimes
+const QDateTime Application::sBeginDateTime(QDateTime::fromString(startDate, "yyyy-MM-dd"));
+const QDateTime Application::sEndDateTime(QDateTime::fromString(endDate, "yyyy-MM-dd"));
 
 Application::Application(int argc, char *argv[]) : QApplication(argc, argv),
 												   mDialog(nullptr)
